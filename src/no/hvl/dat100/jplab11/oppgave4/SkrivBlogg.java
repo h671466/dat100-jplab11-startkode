@@ -10,12 +10,17 @@ public class SkrivBlogg {
  
 		
 		try {		
+
 		PrintWriter skriver = new PrintWriter(mappe + filnavn);
 		skriver.print(samling.toString());
 		skriver.close();
 		return true;
-		}catch(FileNotFoundException e) {System.out.println("File not found!");
+
+		} catch(FileNotFoundException e) {System.out.println("File not found!");
+
 	    }
+
 		return false;
+		
 	}
 }

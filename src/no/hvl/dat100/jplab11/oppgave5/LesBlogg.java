@@ -16,14 +16,17 @@ public class LesBlogg {
 		
 		Scanner scanner;
 		try {
+
 			scanner = new Scanner(new File(mappe+filnavn));
 			int antall = scanner.nextInt();
 			Blogg blogg = new Blogg(antall);
 			
 			while (scanner.hasNext()) {
+
 				String next = scanner.nextLine();
 
 				if (next.equals(TEKST)) {
+
 					String id = scanner.nextLine();
 					String brukernavn = scanner.nextLine();
 					String dato = scanner.nextLine();
@@ -33,6 +36,7 @@ public class LesBlogg {
 					blogg.leggTil(innlegg);
 					
 				} else if (next.equals(BILDE)) {
+
 					String id = scanner.nextLine();
 					String brukernavn = scanner.nextLine();
 					String dato = scanner.nextLine();
@@ -41,15 +45,23 @@ public class LesBlogg {
 					String url = scanner.nextLine();
 					Bilde innlegg = new Bilde(Integer.parseInt(id),brukernavn,dato,Integer.parseInt(likes),tekst,url);
 					blogg.leggTil(innlegg);
+
 				}
 				
 			}
+
 			return blogg;
+
 		} catch (FileNotFoundException e) {
+
 			System.out.println("Fil ikke funnet.");
+
 		} catch (Exception e) {
+
 			System.out.println("Noe gikk galt.");
+
 		}
+		
 		return null;
 		
 	}

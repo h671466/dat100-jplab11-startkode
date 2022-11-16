@@ -5,7 +5,9 @@ import no.hvl.dat100.jplab11.oppgave3.Blogg;
 public class HtmlBlogg extends Blogg {
 
 	public HtmlBlogg() {
+
 		super();
+
 	}
 	
 	private static String HTMLPREFIX = 
@@ -16,12 +18,17 @@ public class HtmlBlogg extends Blogg {
 	
 	@Override
 	public String toString() {
+
 		String out = "";
 		out += HTMLPREFIX;
+
 		for(int i = 0; i < this.nesteledig; i++) {
+
 			out += innleggtabell[i].toHTML();
 			out += "<br>";
+
 		}
+		
 		out += HTMLPOSTFIX;
 		return out;
 		
