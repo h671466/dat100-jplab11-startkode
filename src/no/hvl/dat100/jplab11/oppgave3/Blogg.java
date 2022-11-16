@@ -1,10 +1,10 @@
 package no.hvl.dat100.jplab11.oppgave3;
 
-import java.util.Arrays;
-
 import no.hvl.dat100.jplab11.oppgave1.*;
 import no.hvl.dat100.jplab11.oppgave2.Bilde;
 import no.hvl.dat100.jplab11.oppgave2.Tekst;
+
+import java.util.Arrays;
 
 public class Blogg {
 
@@ -174,7 +174,7 @@ public class Blogg {
 				}
 			}
 		}
-		
+
 		return matches;
 
 	}
