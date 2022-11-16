@@ -1,8 +1,10 @@
 package no.hvl.dat100.jplab11.oppgave4;
 
+import no.hvl.dat100.jplab11.oppgave3.Blogg;
+
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
-import no.hvl.dat100.jplab11.oppgave3.Blogg;
+
 
 public class SkrivBlogg {
 
@@ -21,6 +23,6 @@ public class SkrivBlogg {
 	    }
 
 		return false;
-		
+
 	}
 }
